@@ -5,3 +5,5 @@
 - task-manager with Django
 - Tkinter
 - Virtual assistant
+- Payment system with Stripe
+- Photo album with Django and AWS S3
