@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+
+
+{% block content %}
+
+<div class="higher-bar">
+    <a href={% url 'tasks' %}>&#8676; Regresar</a>
+</div>
+
+<div class="card-body">
+    <form method='POST'>
+        {% csrf_token %}
+        <p>Vas a eliminar esta tarea: '{{ task }}'</p>
+        <input class="button" type='submit', value='Eliminar'>
+    </form>
+</div>
+{% endblock content %}
+    
